@@ -18,7 +18,7 @@ public class ButtonPanel extends javax.swing.JPanel
     {
         
         setLayout(null);
-
+        //add new train drive button
         JButton newTD = new JButton("Új mozdonyvezető hozzáadása");
         newTD.setBounds(60, 20, 200, 30);
         newTD.addActionListener(new ActionListener() 
@@ -30,7 +30,8 @@ public class ButtonPanel extends javax.swing.JPanel
             }
         });
         add(newTD);
-
+        
+        //add train driver editor button
         JButton tDEditor = new JButton("Szerkesztés");
         tDEditor.setBounds(280, 20, 100, 30);
         tDEditor.addActionListener(new ActionListener() 
@@ -63,6 +64,7 @@ public class ButtonPanel extends javax.swing.JPanel
         });
         add(tDEditor);
 
+        //add refresh button
         JButton upDate = new JButton("Frissítés");
         upDate.setBounds(400, 20, 100, 30);
         upDate.addActionListener(new ActionListener() 
@@ -74,7 +76,8 @@ public class ButtonPanel extends javax.swing.JPanel
             }
         });
         add(upDate);
-
+        
+        //add delete button
         JButton delete = new JButton("Kijelölt mozdonyvezető törlése");
         delete.setBounds(520, 20, 200, 30);
         delete.addActionListener(new ActionListener() 
