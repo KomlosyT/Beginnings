@@ -9,6 +9,7 @@ import javax.swing.table.DefaultTableModel;
 /**
  *
  * @author KomlosyT
+ * This class contains the program's search functions.
  */
 public class SearchPanel extends JPanel 
 {

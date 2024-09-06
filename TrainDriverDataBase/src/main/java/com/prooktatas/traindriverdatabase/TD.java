@@ -1,10 +1,11 @@
 package com.prooktatas.traindriverdatabase;
 
-import java.util.HashSet;
 
 /**
  *
  * @author KomlosyT
+ * This is the train driver class.
+ * 
  */
 public class TD {
     private String lastName;

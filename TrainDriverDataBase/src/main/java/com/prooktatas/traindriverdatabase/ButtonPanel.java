@@ -8,6 +8,8 @@ import javax.swing.JOptionPane;
 /**
  *
  * @author KomlosyT
+ * This class contains buttons for adding a new train driver, 
+ * editing existing ones, deleting, and a refresh button. 
  */
 public class ButtonPanel extends javax.swing.JPanel 
 {

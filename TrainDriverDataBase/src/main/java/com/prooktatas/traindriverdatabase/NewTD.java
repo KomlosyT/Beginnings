@@ -15,6 +15,7 @@ import javax.swing.JComboBox;
 /**
  *
  * @author KomlosyT
+ * This class describes the event window that appears after pressing the add new train driver button. 
  */
 public class NewTD extends javax.swing.JFrame implements ActionListener
 {

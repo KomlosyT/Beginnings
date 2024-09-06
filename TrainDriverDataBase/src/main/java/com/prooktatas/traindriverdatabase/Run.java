@@ -12,6 +12,7 @@ import javax.swing.table.DefaultTableModel;
 /**
  *
  * @author KomlosyT
+ * This class runs the program.
  */
 public class Run extends javax.swing.JFrame 
 {

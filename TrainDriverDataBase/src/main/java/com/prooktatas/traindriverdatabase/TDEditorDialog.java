@@ -16,6 +16,8 @@ import javax.swing.JTextField;
 /**
  *
  * @author KomlosyT
+ * This class is the pop-up window that appears after pressing the edit button, 
+ * where train drivers can be edited
  */
 public class TDEditorDialog extends JDialog {
 
