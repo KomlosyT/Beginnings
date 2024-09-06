@@ -20,7 +20,7 @@ public class Run extends javax.swing.JFrame
     private DB db;
     private JTable table;
     private DefaultTableModel tableModel;
-
+    //main window
     public Run() 
     {
         db = new DB();
