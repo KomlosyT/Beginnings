@@ -6,18 +6,20 @@ import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.text.Collator;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
+import java.util.Locale;
 
 
 /**
  *
  * @author KomlosyT
- * This class contains the database as well as the related methods. 
  */
 public class DB 
 {
@@ -29,7 +31,7 @@ public class DB
 
     Connection conn = null;
     Statement createStatement = null;
-    //database declaration
+    
     public DB() 
     {
 
@@ -85,7 +87,7 @@ public class DB
             System.out.println("" + ex);
         }
     }
-    //add train driver
+    
     public void addTD(TD td)
     {
         try 
@@ -109,7 +111,6 @@ public class DB
         
     }
     
-    //get all train driver
     public ArrayList<TD> getAllTD()
     {   
         String sql = "select * from tds";
@@ -158,8 +159,7 @@ public class DB
         }    
     return tds;    
     }
-    
-    //search by last name
+
     public ArrayList<TD> searchTDByLastName(String lastName)
     {
         String sql = "SELECT * FROM tds WHERE LOWER(lastName) LIKE LOWER(?)";
@@ -191,8 +191,7 @@ public class DB
         }    
         return tds;
     }
-    
-    //search by first name
+
     public ArrayList<TD> searchTDByFirstName(String firstName)
     {
         String sql = "SELECT * FROM tds WHERE LOWER(firstName) LIKE LOWER(?)";
@@ -225,7 +224,6 @@ public class DB
         return tds;
     }
 
-    //search by age
     public ArrayList<TD> searchTDByAge(int age)
     {
         String sql = "SELECT * FROM tds WHERE age LIKE ?";
@@ -258,7 +256,6 @@ public class DB
         return tds;
     }
 
-    //search by category
     public ArrayList<TD> searchTDByCategory(String category)
     {
         String sql = "SELECT * FROM tds WHERE category LIKE ?";
@@ -291,7 +288,6 @@ public class DB
         return tds;
     }
 
-    //search by type
     public ArrayList<TD> searchTDByType(String type) 
     {
         String sql = "SELECT * FROM tds WHERE type LIKE ?" ;
@@ -329,7 +325,6 @@ public class DB
         return tds;
     }
 
-    //search by line
     public ArrayList<TD> searchTDByLine(String line) 
     {
         String sql = "SELECT * FROM tds WHERE line LIKE ?" ;
@@ -367,7 +362,6 @@ public class DB
         return tds;
     }
 
-    //update train driver   
     public void updateTD(TD td, String originalLastName) 
     {
         String sql = "UPDATE tds SET lastName = ?, firstName = ?, age = ?, category = ?, type = ?, line = ? WHERE lastName = ?";
@@ -398,8 +392,7 @@ public class DB
             System.out.println("Hiba történt a mozdonyvezető adatainak frissítése közben: " + e.getMessage());
         }
     }
-    
-    //delete train driver
+
     public boolean deleteTD(String lastName, String firstName) {
         try 
         {

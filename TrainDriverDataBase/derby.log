@@ -1,6 +1,6 @@
 ----------------------------------------------------------------
-Fri Sep 06 10:15:51 CEST 2024:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585): instance a816c00e-0191-c667-6652-00000eefc8c8 
+Fri Sep 13 08:28:45 CEST 2024:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585): instance a816c00e-0191-ea11-dd39-00000ef0a800 
 on database directory C:\Users\kolaf\Documents\NetBeansProjects\GithubTestMappa\Beginnings\TrainDriverDataBase\sampleDB with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@33909752 
 Loaded from file:/C:/Users/kolaf/.m2/repository/org/apache/derby/derby/10.15.2.0/derby-10.15.2.0.jar
 java.vendor=Oracle Corporation

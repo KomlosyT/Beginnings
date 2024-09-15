@@ -25,7 +25,7 @@ public class Run extends javax.swing.JFrame
     {
         db = new DB();
         setTitle("Mozdonyvezető adatbázis");
-        setSize(800, 550);
+        setSize(800, 650);
         setLayout(null);
         setResizable(false);
                 
@@ -47,8 +47,7 @@ public class Run extends javax.swing.JFrame
         searchPanel.setBackground(Color.GRAY);
         searchPanel.setBounds(0, 0, 800, 550);
         add(searchPanel);
-        
-     
+
         loadData();
 
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
