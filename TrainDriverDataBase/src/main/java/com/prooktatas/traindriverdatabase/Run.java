@@ -25,7 +25,7 @@ public class Run extends javax.swing.JFrame
     {
         db = new DB();
         setTitle("Mozdonyvezető adatbázis");
-        setSize(800, 650);
+        setSize(800, 550);
         setLayout(null);
         setResizable(false);
                 
